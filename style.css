@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background:gold;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+  }
+  
+  .hero {
+    height: 400px;
+    background-image: url('images/hero2.jpg');
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+    color: white;
+    position: relative;
+  }
+  
+  .hero-content {
+    z-index: 2;
+  }
+  
+  .slogan {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+  }
+  
+  .btn {
+    background: gold;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 10%;
+    background: black;
+  }
+  
+  .feature-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .feature-card p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .gradient-section {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .gradient-section h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+  
+  .gradient-section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .gradient-section .btn {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .gradient-section .btn:hover {
+    background: #f5f5f5;
+  }
+  
+  .testimonials {
+    background: #000;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+  
+  .testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .testimonial {
+    background: #1a1a1a;
+    padding: 30px 20px;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .testimonial h4 {
+    color: gold;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .membership {
+    background: gold;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .membership h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+  }
+  
+  .membership-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .plan {
+    background: #1a1a1a;
+    padding: 30px 25px;
+    max-width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease;
+  }
+  
+  .plan.highlight {
+    border: 2px solid gold;
+  }
+  
+  .plan h3 {
+    font-size: 22px;
+    color: gold;
+    margin-bottom: 10px;
+  }
+  
+  .plan .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .plan .price span {
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .plan p {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  .services {
+    padding: 80px 10%;
+    background: url('images/fit.jpg');
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .service-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .service-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+  }
+  .contact {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    flex: 1;
+    min-width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .card p {
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  .map-container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+/* General Styles for FitCare Website (existing styles) */
+
+/* Header, Navigation, etc. (existing styles) */
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  header .logo {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar ul li a:hover {
+    color: #FFD700;
+  }
+  
+  /* Navigation Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 15px 30px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #FFD700; /* Gold on hover */
+}
+
+/* ================= About Us Page ================= */
+
+.about-page {
+  background-color: #FFD700; /* Gold */
+  font-family: 'Montserrat', sans-serif;
+  padding: 60px 40px;
+  min-height: 100vh;
+}
+
+.about-page h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.about-page p {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  line-height: 1.6;
+}
+
+.why-choose-us-heading {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: black;
+}
+
+.why-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.why-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.why-card {
+  background-color: black;
+  color: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+    
+  
