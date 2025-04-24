@@ -297,9 +297,10 @@
   }
   
   .card p {
-    color: rgb(19, 5, 5);
+    color: black; /* or any color you prefer */
     font-size: 0.9rem;
-  }
+}
+
   
   .map-container {
     width: 100%;
